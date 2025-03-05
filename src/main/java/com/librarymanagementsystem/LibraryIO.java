@@ -10,7 +10,7 @@ public class LibraryIO {
     public static void saveItemToFile(List<LibraryItem> libraryItemList, String filename) {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filename))) {
             oos.writeObject(libraryItemList);
-            System.out.println("Item List save to the file successfully!");
+            System.out.println("Item List save to the file successfully !");
         } catch (IOException e) {
             e.printStackTrace();
         }
